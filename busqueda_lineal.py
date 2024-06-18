@@ -2,9 +2,12 @@ import random
 
 def busqueda_linea(lista, objetivo):
     match = False
+    count = 0
     for elemeneto in lista: # O(n)
+        count +=1
         if elemeneto == objetivo:
             match = True
+            print(f'n: {count}' )
             break
     return match
 
